@@ -5,7 +5,7 @@ Woocommerce new order notify to line chat it's very easy.
 ## What's benefit of line notify can do.
 1. Send a notification to your self.
 2. Send a notifycation to your group.
-3. Can send text, image and line sticker to the notification messege.
+3. Can send text, image and line sticker to the notification message.
 
 ## How to install
 1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
