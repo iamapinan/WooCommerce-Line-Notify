@@ -12,3 +12,32 @@ Text Domain: wc_linenotify
 Domain Path: /languages
 */
 
+// Not allow direct access to this file
+defined ( 'ABSPATH' ) or die ( "No direct script access allowed." );
+
+// Check if woocommerce is present in the system.
+if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+    
+    function wc_linenotify_init() {
+
+        if ( ! class_exists( 'wc_linenotify' ) ) {
+        // Create the class for plugin.
+            class wc_linenotify extends WC_Order {
+                // Constructor for wc_linenotify class.
+                // @access public
+                // @return void
+
+                public function __construct() {
+                    $this->id = 'wc-linenotify';
+                    $this->title = 'Woocommerce Line Notify';
+                    $this->notify_api_endpoint = '';
+                    $this->token = 'y6dxyTcM1crbJRpvRDSnbWJxOewmj6I7vVDxiV8cKez'; //For test only.
+
+                }
+            }
+        }
+    }
+    
+    
+
+}
