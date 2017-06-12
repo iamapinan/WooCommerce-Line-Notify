@@ -3,7 +3,8 @@
 Woocommerce new order notify to line chat it's very easy.
 
 ## How to install
-
+1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
+2. Activate the plugin through the ‘Plugins’ menu in WordPress.
 ## Config it.
 
 ## License
