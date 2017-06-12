@@ -32,7 +32,24 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                     $this->title = 'Woocommerce Line Notify';
                     $this->notify_api_endpoint = '';
                     $this->token = 'y6dxyTcM1crbJRpvRDSnbWJxOewmj6I7vVDxiV8cKez'; //For test only.
+                    $this->api_endpoint = '';
+                    $this->init();
+                }
 
+                function lineauthorize() {
+
+                }
+
+                function SendNotify( $message ) {
+                    // Post to line notify server.
+                }
+
+                function AdminSetting() {
+                    // Setting page.
+                }
+
+                function init() {
+                    // Initial plugin and plugin events.
                 }
             }
         }
@@ -41,3 +58,4 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     
 
 }
+
