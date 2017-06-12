@@ -1,4 +1,4 @@
-[logo]: https://github.com/iamapinan/wc_linenotify/raw/master/src/image/wc_line.png "Woocommece Line Notify"
+![Woocommerce Line Notify](https://github.com/iamapinan/wc_linenotify/raw/master/src/image/wc_line.png)
 # Woocommerce Line Notify plugin.
 Woocommerce new order notify to line chat it's very easy.
 
