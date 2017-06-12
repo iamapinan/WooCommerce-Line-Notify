@@ -1,5 +1,5 @@
 <?php
-include '../lib/Requests/library/Requests.php';
+include 'Requests.php';
 
 class LineNotify {
 
