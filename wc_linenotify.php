@@ -28,8 +28,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $this->id = 'wc-linenotify';
             $this->title = 'Woocommerce Line Notify';
             $this->notify_api_endpoint = 'https://notify-api.line.me/api/notify';
-            $this->token = 'TAuixZoMjynNQyb8qX82TrPDHWwcuRHu6EnasiTiOut'; //For test only.
-
+           
             $this->init();
         }
 
