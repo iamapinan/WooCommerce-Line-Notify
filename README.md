@@ -18,7 +18,7 @@ Woocommerce new order notify to line notify it's very easy.
 1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
 2. Activate the plugin through the ‘Plugins’ menu in WordPress.
 
-## Config.
+[WIKI](https://github.com/iamapinan/wc_linenotify/wiki)
 
 ## License
 [GNU General Public License v3.0](https://github.com/iamapinan/wc_linenotify/blob/master/LICENSE)
