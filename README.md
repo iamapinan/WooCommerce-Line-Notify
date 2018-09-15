@@ -3,6 +3,12 @@
 Woocommerce new order notify to line notify it's very easy. 
 - [Download](https://iotech.co.th/wp-content/uploads/2018/09/wc_linenotify.zip) zip file here.
 
+## Features
+- Add line token.
+- Message pattern with order short code supported.
+- Send notify to line group or user.
+- Send notify when have order activity.
+
 ## What's benefit of line notify can do.
 1. Send a notification to your self.
 2. Send a notifycation to your group.
