@@ -1,6 +1,7 @@
 ![Woocommerce Line Notify](https://github.com/iamapinan/wc_linenotify/raw/master/src/image/wc_line.png)
-# Woocommerce Line Notify plugin... 70% completed.
+# Woocommerce Line Notify plugin stable version
 Woocommerce new order notify to line notify it's very easy.
+![Download](https://iotech.co.th/wp-content/uploads/2018/09/wc_linenotify.zip) zip file here.
 
 ## What's benefit of line notify can do.
 1. Send a notification to your self.
