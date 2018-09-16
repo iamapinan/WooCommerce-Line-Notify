@@ -3,6 +3,11 @@
 Woocommerce new order notify to line notify it's very easy. 
 - [Download](https://iotech.co.th/wp-content/uploads/2018/09/wc_linenotify.zip) zip file here.
 
+## v1.0.3 Changes log
+- Fixed time display in alert message.
+- Fixed order total in alert message.
+- Remove state name.
+
 ## Features
 - Add line token.
 - Message pattern with order short code supported.

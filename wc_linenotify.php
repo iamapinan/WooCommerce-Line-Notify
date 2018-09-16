@@ -61,10 +61,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $message = $this->wc_line_notify_options['pattern'];
             $message = str_replace('[order_id]', $order_id, $message);
             $message = str_replace('[order_status]', $the_data['status'], $message);
-            $message = str_replace('[order_time]', $the_data['date_created']->getTimestamp(), $message);
-            $message = str_replace('[order_total]', $the_data['total_tax'], $message);
+            $message = str_replace('[order_time]', date('d/m/Y, H:i', $the_data['date_created']->getTimestamp()), $message);
+            $message = str_replace('[order_total]', $the_data['total'], $message);
             $message = str_replace('[order_payment]', $the_data['payment_method_title'], $message);
-            $message = str_replace('[order_address]', $the_data['billing']['address_1'] . ' ' . $the_data['billing']['address_2'] . ' ' . $the_data['billing']['city'] . ' ' . $the_data['billing']['state'], $message);
+            $message = str_replace('[order_address]', $the_data['billing']['address_1'] . ' ' . $the_data['billing']['address_2'] . ' ' . $the_data['billing']['city'] , $message);
             $this->AlertText = $message;
             $this->SendNotify();
         }
