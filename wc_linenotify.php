@@ -3,7 +3,7 @@
 Plugin Name: Woocommerce Line Notify
 Plugin URI:  https://github.com/iamapinan/wc_linenotify
 Description: Woocommerce new order notify to line chat.
-Version:     1.0.2
+Version:     1.0.3
 Author:      Apinan Woratrakun
 Author URI:  apinu.com
 License:     GNU General Public License v3.0
@@ -26,7 +26,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
         // @return void
         public function __construct() {
             $this->id = 'wc-linenotify';
-            $this->version  = '1.0.2';
+            $this->version  = '1.0.3';
             $this->author = '<a href="https://facebook.com/9apinan" target="_blank">Apinan Woratrakun</a>';
             $this->title = 'Woocommerce Line Notify';
             $this->notify_api_endpoint = 'https://notify-api.line.me/api/notify';
@@ -36,7 +36,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                 "[order_time]",
                 "[order_total]",
                 "[order_payment]",
-                "[order_address]"
+                "[order_address]",
+                "[order_customer]"
             ];
             $this->AlertText = 'Null';
             $this->wc_line_notify_options = get_option( '_option_name' ); 
@@ -64,6 +65,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $message = str_replace('[order_time]', date('d/m/Y, H:i', $the_data['date_created']->getTimestamp()), $message);
             $message = str_replace('[order_total]', $the_data['total'], $message);
             $message = str_replace('[order_payment]', $the_data['payment_method_title'], $message);
+            $message = str_replace('[order_customer]', $the_data['shipping']['first_name'] .' '. $the_data['shipping']['last_name'], $message);
             $message = str_replace('[order_address]', $the_data['billing']['address_1'] . ' ' . $the_data['billing']['address_2'] . ' ' . $the_data['billing']['city'] , $message);
             $this->AlertText = $message;
             $this->SendNotify();

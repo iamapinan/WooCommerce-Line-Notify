@@ -7,6 +7,7 @@ Woocommerce new order notify to line notify it's very easy.
 - Fixed time display in alert message.
 - Fixed order total in alert message.
 - Remove state name.
+- Add [order_customer] short code.
 
 ## Features
 - Add line token.
