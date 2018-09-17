@@ -9,7 +9,7 @@ Woocommerce order notification to Line notify API.
 - Choose order status to send notification.
 - Show timezone setting in your system.
 - Fixed timezone [issue](https://github.com/iamapinan/wc_linenotify/issues/1).
-- Imploved perfomance by query database when need only.
+- Improved performance by query database when need only.
 - Smooth design settings ui.
 - Support scss style editing.
 
