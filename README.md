@@ -1,7 +1,7 @@
 ![Woocommerce Line Notify](https://github.com/iamapinan/wc_linenotify/raw/master/src/image/wc_line.png)
 # Woocommerce Line Notify plugin stable version
 Woocommerce new order notify to line notify it's very easy. 
-- [Download](https://iotech.co.th/wp-content/uploads/2018/09/wc_linenotify.zip) zip file here.
+- [Download](https://github.com/iamapinan/wc_linenotify/archive/master.zip) zip file here.
 
 ## v1.0.3 Changes log
 - Fixed time display in alert message.
