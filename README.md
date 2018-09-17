@@ -20,8 +20,11 @@ Woocommerce order notification to Line notify API.
 - Add [order_customer] short code.
 
 ## Screenshot
-![Setting](src/screenshot.png) Setting page
-![Alert message](src/result_ss.jpg) Notification page
+![Setting](src/screenshot.png)  
+Setting page
+
+![Alert message](src/result_ss.jpg)  
+Notification page
 
 ## Features
 - Add line token.
