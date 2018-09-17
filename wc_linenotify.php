@@ -50,8 +50,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             // Initial plugin and plugin events.
             add_action( 'admin_menu', array( $this, 'wc_line_notify_add_plugin_page' ) );
             add_action( 'admin_init', array( $this, 'wc_line_notify_page_init' ) );
-            
-
         }
 
         function SendAlert ( $order_id ) {
@@ -118,8 +116,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                 <img src="<?php echo WP_PLUGIN_URL . '/wc_linenotify/src/image/wc_line.png'; ?>">
                 
                 <?php 
-                    settings_errors(); 
-                    // $this->SendNotify('test');
+                    settings_errors();
                 ?>
                 
                 <form method="post" action="options.php">
