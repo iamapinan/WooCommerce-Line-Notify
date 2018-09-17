@@ -110,7 +110,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             );
             // Post to line notify server.
             $response = wp_remote_post( $this->notify_api_endpoint, $args );
-
+            return $response;
             // Debug here.
             // if ( is_wp_error( $response ) ) {
             //     $error_message = $response->get_error_message();

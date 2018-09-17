@@ -4,7 +4,8 @@ Thank you for your suggestion and support to the project.
 I very happy to help and give the thing I can do to the world. 
 If you can help me to develop this plugin or join as a team members please follow below. I'll add your name to contributor members if you've joined.
 1. Clone this repo on development branch.
-2. Make change to the project.
-3. Push update to your branch.
-4. Create pull request with update details to developer.
-5. Waiting for approved.
+2. run `php composer install`
+3. Make change to the project.
+4. Push update to your branch.
+5. Create pull request with update details to developer.
+6. Waiting for approved.
