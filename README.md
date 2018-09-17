@@ -42,6 +42,13 @@ Notification page
 1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
 2. Activate the plugin through the ‘Plugins’ menu in WordPress.
 
+## Roadmap
+- Message pattern for selected status.
+- Multiple token id support for message broadcast.
+- Message broadcast to line group.
+- Add line sticker.
+- Attach event url.
+
 ## Contibute guidelines
 Thank you for your suggestion and support to the project. I very happy to help and give the thing I can do to the world. If you can help me to develop this plugin or join as a team members please follow below. I'll add your name to contributor members if you've joined.
 1. Clone this repo on development branch.
