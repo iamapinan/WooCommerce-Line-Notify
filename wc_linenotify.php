@@ -65,7 +65,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $message = str_replace('[order_time]', date('d/m/Y, H:i', $the_data['date_created']->getTimestamp()), $message);
             $message = str_replace('[order_total]', $the_data['total'], $message);
             $message = str_replace('[order_payment]', $the_data['payment_method_title'], $message);
-            $message = str_replace('[order_customer]', $the_data['shipping']['first_name'] .' '. $the_data['shipping']['last_name'], $message);
+            $message = str_replace('[order_customer]', $the_data['billing']['first_name'] .' '. $the_data['billing']['last_name'], $message);
             $message = str_replace('[order_address]', $the_data['billing']['address_1'] . ' ' . $the_data['billing']['address_2'] . ' ' . $the_data['billing']['city'] , $message);
             $this->AlertText = $message;
             $this->SendNotify();
