@@ -51,10 +51,10 @@ Notification page
 
 ## Contibute guidelines
 Thank you for your suggestion and support to the project. I very happy to help and give the thing I can do to the world. If you can help me to develop this plugin or join as a team members please follow below. I'll add your name to contributor members if you've joined.
-1. Clone this repo on development branch.
+1. Fork this repo on development branch and sync to your local.
 2. run `php composer install`
 3. Make change to the project.
-4. Push update to your branch.
+4. Push & commit update to your branch.
 5. Create pull request with update details to developer.
 6. Waiting for approved.
 
