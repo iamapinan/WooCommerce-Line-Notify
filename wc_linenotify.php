@@ -268,7 +268,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
         public function image_callback() {
             printf(
-                '<input class="regular-text" type="text" name="_option_name[image]" placeholder="https://..." id="image" value="%s" required> <span class="textReq">Support jpg, png Max size: 1024x1024px</span>',
+                '<input class="regular-text" type="text" name="_option_name[image]" placeholder="https://..." id="image" value="%s"> <span class="textReq">Support jpg, png Max size: 1024x1024px</span>',
                 isset( $this->wc_line_notify_options['image'] ) ? esc_attr( $this->wc_line_notify_options['image']) : ''
             );
         }
