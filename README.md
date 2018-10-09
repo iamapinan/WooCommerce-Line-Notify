@@ -4,6 +4,15 @@ Woocommerce order notification to Line notify API.
 
 [Download](https://github.com/iamapinan/wc_linenotify/archive/master.zip) zip file here.
 
+## v1.0.5 Changes log
+- Remove image require for image field.
+- Fixed order status display from status code to status label.
+- Add [order_province] to display provice name in Thai only.
+- Add [order_phone] to display billing phone number.
+- Add [order_company] to display billing company.
+- Add [order_note] to display customer notes.
+- Add [order_url] to display order details for authorized user.
+
 ## v1.0.4 Changes log
 - Add image to notification.
 - Choose order status to send notification.
