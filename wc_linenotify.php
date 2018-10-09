@@ -3,7 +3,7 @@
 Plugin Name: Woocommerce Line Notify
 Plugin URI:  https://github.com/iamapinan/wc_linenotify
 Description: Woocommerce new order notify to line chat.
-Version:     1.0.4
+Version:     1.0.5
 Author:      Apinan Woratrakun
 Author URI:  https://iotech.co.th
 License:     GNU General Public License v3.0
@@ -26,7 +26,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
         // @return void
         public function __construct() {
             $this->id = 'wc-linenotify';
-            $this->version  = '1.0.4';
+            $this->version  = '1.0.5';
             $this->author = '<a href="https://facebook.com/9apinan" target="_blank">Apinan Woratrakun</a>';
             $this->title = 'Woocommerce Line Notify';
             $this->notify_api_endpoint = 'https://notify-api.line.me/api/notify';
@@ -37,7 +37,12 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                 "[order_total]",
                 "[order_payment]",
                 "[order_address]",
-                "[order_customer]"
+                "[order_customer]",
+                "[order_phone]",
+                "[order_company]",
+                "[order_note]",
+                "[order_province]",
+                "[order_url]"
             ];
 
             $this->AlertText = null;
@@ -71,19 +76,116 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $availableStatus = json_decode( $this->wc_line_notify_options['status'] );
             if( in_array( 'wc-' . $the_data['status'], $availableStatus) ) {
 
+                // Generate order management url.
+                $orderUri = get_admin_url(null, '/post.php?post='.$order_id.'&action=edit');
+          
+                // print_R($the_data);
+                // exit;
                 // Pattern convert.
                 $message = $this->wc_line_notify_options['pattern'];
                 $message = str_replace('[order_id]', $order_id, $message);
-                $message = str_replace('[order_status]', $the_data['status'], $message);
+                $message = str_replace('[order_status]', wc_get_order_status_name( 'wc-' . $the_data['status'] ), $message);
                 $message = str_replace('[order_time]', $the_data['date_modified']->date('d/m/Y, H:i'), $message);
                 $message = str_replace('[order_total]', $the_data['total'], $message);
                 $message = str_replace('[order_payment]', $the_data['payment_method_title'], $message);
                 $message = str_replace('[order_customer]', $the_data['billing']['first_name'] .' '. $the_data['billing']['last_name'], $message);
                 $message = str_replace('[order_address]', $the_data['billing']['address_1'] . ' ' . $the_data['billing']['address_2'] . ' ' . $the_data['billing']['city'] , $message);
+                $message = str_replace('[order_phone]', $the_data['billing']['phone'], $message);
+                $message = str_replace('[order_company]', $the_data['billing']['company'], $message);
+                $message = str_replace('[order_province]', $this->the_states($the_data['billing']['state']), $message);
+                $message = str_replace('[order_note]', $the_data['customer_note'], $message);
+                $message = str_replace('[order_url]', $orderUri, $message);
                 $this->AlertText = $message;
                 $this->SendNotify();
             }
         }
+
+        /**
+         * Change woocommerce state name to Thailand state.
+         */
+        public function the_states( $states ) {
+            $states_set = array(
+              'TH-81' => 'กระบี่',
+              'TH-10' => 'กรุงเทพมหานคร',
+              'TH-71' => 'กาญจนบุรี',
+              'TH-46' => 'กาฬสินธุ์',
+              'TH-62' => 'กำแพงเพชร',
+              'TH-40' => 'ขอนแก่น',
+              'TH-22' => 'จันทบุรี',
+              'TH-24' => 'ฉะเชิงเทรา',
+              'TH-20' => 'ชลบุรี',
+              'TH-18' => 'ชัยนาท',
+              'TH-36' => 'ชัยภูมิ',
+              'TH-86' => 'ชุมพร',
+              'TH-57' => 'เชียงราย',
+              'TH-50' => 'เชียงใหม่',
+              'TH-92' => 'ตรัง',
+              'TH-23' => 'ตราด',
+              'TH-63' => 'ตาก',
+              'TH-26' => 'นครนายก',
+              'TH-73' => 'นครปฐม',
+              'TH-48' => 'นครพนม',
+              'TH-30' => 'นครราชสีมา',
+              'TH-80' => 'นครศรีธรรมราช',
+              'TH-60' => 'นครสวรรค์',
+              'TH-12' => 'นนทบุรี',
+              'TH-96' => 'นราธิวาส',
+              'TH-55' => 'น่าน',
+              'TH-38' => 'บึงกาฬ',
+              'TH-31' => 'บุรีรัมย์',
+              'TH-13' => 'ปทุมธานี',
+              'TH-77' => 'ประจวบคีรีขันธ์',
+              'TH-25' => 'ปราจีนบุรี',
+              'TH-94' => 'ปัตตานี',
+              'TH-14' => 'พระนครศรีอยุธยา',
+              'TH-56' => 'พะเยา',
+              'TH-82' => 'พังงา',
+              'TH-93' => 'พัทลุง',
+              'TH-66' => 'พิจิตร',
+              'TH-65' => 'พิษณุโลก',
+              'TH-76' => 'เพชรบุรี',
+              'TH-67' => 'เพชรบูรณ์',
+              'TH-54' => 'แพร่',
+              'TH-83' => 'ภูเก็ต',
+              'TH-44' => 'มหาสารคาม',
+              'TH-49' => 'มุกดาหาร',
+              'TH-58' => 'แม่ฮ่องสอน',
+              'TH-35' => 'ยโสธร',
+              'TH-95' => 'ยะลา',
+              'TH-45' => 'ร้อยเอ็ด',
+              'TH-85' => 'ระนอง',
+              'TH-21' => 'ระยอง',
+              'TH-70' => 'ราชบุรี',
+              'TH-16' => 'ลพบุรี',
+              'TH-52' => 'ลำปาง',
+              'TH-51' => 'ลำพูน',
+              'TH-42' => 'เลย',
+              'TH-33' => 'ศรีสะเกษ',
+              'TH-47' => 'สกลนคร',
+              'TH-90' => 'สงขลา',
+              'TH-91' => 'สตูล',
+              'TH-11' => 'สมุทรปราการ',
+              'TH-75' => 'สมุทรสงคราม',
+              'TH-74' => 'สมุทรสาคร',
+              'TH-27' => 'สระแก้ว',
+              'TH-19' => 'สระบุรี',
+              'TH-17' => 'สิงห์บุรี',
+              'TH-64' => 'สุโขทัย',
+              'TH-72' => 'สุพรรณบุรี',
+              'TH-84' => 'สุราษฎร์ธานี',
+              'TH-32' => 'สุรินทร์',
+              'TH-43' => 'หนองคาย',
+              'TH-39' => 'หนองบัวลำภู',
+              'TH-15' => 'อ่างทอง',
+              'TH-37' => 'อำนาจเจริญ',
+              'TH-41' => 'อุดรธานี',
+              'TH-53' => 'อุตรดิตถ์',
+              'TH-61' => 'อุทัยธานี',
+              'TH-34' => 'อุบลราชธานี'
+            );
+            return $states_set[$states];
+          }
+
 
         /**
          * Send notify action.
@@ -207,7 +309,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
             add_settings_field(
                 'image', // id
-                'Add your image url', // title
+                'Add your image url [optional]', // title
                 array( $this, 'image_callback' ), // callback
                 'notify-admin', // page
                 '_setting_section' // section
@@ -291,7 +393,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             $orderStatus = wc_get_order_statuses();
             foreach($orderStatus as $sid => $sv) {
 
-                $isCheck = (in_array($sid, $statusSelected)) ? 'checked' : '';
+                $isCheck = @(in_array($sid, $statusSelected)) ? 'checked' : '';
                 echo "<span class='order_status_check'><input type='checkbox' name='_option_name[status][]' $isCheck value='$sid' id='status_$sid'> $sv</span>&nbsp;&nbsp;";
             }
         }
