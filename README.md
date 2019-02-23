@@ -8,7 +8,7 @@ Woocommerce order notification to Line notify API.
 * แต่อนุญาตใช้เพื่อการเป็นส่วนประกอบของทำโปรเจคใดๆ ทั้งฟรีและไม่ฟรี
 * ผู้พัฒนาไม่มีส่วนเกี่ยวข้องใดๆกับความเสียหายที่เกิดขึ้นจากการทำงานของซอฟต์แวร์ ผู้ใช้ยินดียอมรับความเสี่ยงนั้น
 
-[Download](https://github.com/iamapinan/wc_linenotify/archive/master.zip) zip file here.
+[Download](https://git.iotech.co.th/iamapinan/woocommerce-line-notify/-/archive/master/woocommerce-line-notify-master.zip) zip file here.
 
 ## v1.0.6 Changes log
 - [เพิ่ม Shortcode `[product]` เพื่อแสดงรายการสินค้าใน alert](https://github.com/iamapinan/Woocommerce-Line-Notify/issues/9)
