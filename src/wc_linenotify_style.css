@@ -1,0 +1,38 @@
+.shortcodeBadge a {
+  display: inline-block;
+  padding: 3px;
+  margin-right: 5px;
+  background: #673AB7;
+  border-radius: 3px;
+  margin-top: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.textCount {
+  color: #2e7aec;
+}
+
+.textReq {
+  color: #ff0000;
+}
+
+#WCLineNotifySettings textarea, #WCLineNotifySettings input[type=text], #WCLineNotifySettings input[type=checkbox] {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+#WCLineNotifySettings .button-secondary {
+  padding: 2px 8px !important;
+  height: 30px !important;
+  vertical-align: middle;
+}
+
+#WCLineNotifySettings .order_status_check {
+  display: block;
+}
+
+.wrap {
+  margin: 10px 20px 0 2px;
+  max-width: 980px;
+}
