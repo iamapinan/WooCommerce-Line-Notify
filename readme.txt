@@ -69,6 +69,11 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 - Fixed style.
 - Increase stable and more.
 
+== Upgrade Notice ==
+
+= 1.0.6 =
+Improved performance and add more features.
+
 == Features ==
 
 1. Add line token.
