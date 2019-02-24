@@ -81,10 +81,10 @@ This plugin is call to external service [Line Messaging API](https://terms.line.
 - Add [order_customer] short code.
 
 ## Screenshot
-![Setting](src/image/setting-screen.png)  
+![Setting](assets/setting-screen.png)  
 Setting page
 
-![Alert message](src/image/noti-demo.png)  
+![Alert message](assets/noti-demo.png)  
 Notification page
 
 ## Roadmap
