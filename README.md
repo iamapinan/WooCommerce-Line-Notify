@@ -10,6 +10,45 @@ Woocommerce order notification to Line notify API.
 
 [Download](https://git.iotech.co.th/iamapinan/woocommerce-line-notify/-/archive/master/woocommerce-line-notify-master.zip) zip file here.
 
+## Available short code for implement message pattern.
+```
+[order_status]
+[order_id]
+[order_time]
+[order_total]
+[order_payment]
+[order_address]
+[order_customer]
+[order_phone]
+[order_company]
+[order_note]
+[order_province]
+[order_url]
+[products] //List of product in order.
+```
+
+## Features
+- Add line token.
+- Message pattern with order short code supported.
+- Send notify to line group or user.
+- Send notify when have order activity.
+- Add logo or image banner to notification.
+- Only support Thai language for this version .
+
+## What's benefit of line notify can do.
+1. Send a notification to your self.
+2. Send a notifycation to your group.
+3. Can send text, image and line sticker to the notification message.
+
+## How to install
+1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
+2. Activate the plugin through the ‘Plugins’ menu in WordPress.
+
+
+## Term of Privacy
+This plugin is call to external service [Line Messaging API](https://terms.line.me/line_rules/?lang=en) it use to be send an order data to your line messager account or line group depend on your token. 
+
+
 ## v1.0.6 Changes log
 - [เพิ่ม Shortcode `[product]` เพื่อแสดงรายการสินค้าใน alert](https://github.com/iamapinan/Woocommerce-Line-Notify/issues/9)
 - ยกเลิกแนบรูป
@@ -42,27 +81,11 @@ Woocommerce order notification to Line notify API.
 - Add [order_customer] short code.
 
 ## Screenshot
-![Setting](src/screenshot.png)  
+![Setting](src/image/setting-screen.png)  
 Setting page
 
-![Alert message](src/result_ss.jpg)  
+![Alert message](src/image/noti-demo.png)  
 Notification page
-
-## Features
-- Add line token.
-- Message pattern with order short code supported.
-- Send notify to line group or user.
-- Send notify when have order activity.
-- Add logo or image banner to notification.
-
-## What's benefit of line notify can do.
-1. Send a notification to your self.
-2. Send a notifycation to your group.
-3. Can send text, image and line sticker to the notification message.
-
-## How to install
-1. Upload the entire wc_linenotify folder to the /wp-content/plugins/ directory.
-2. Activate the plugin through the ‘Plugins’ menu in WordPress.
 
 ## Roadmap
 - Message pattern for selected status.
