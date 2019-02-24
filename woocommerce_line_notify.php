@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Woocommerce Line Notify
-Plugin URI:  https://github.com/iamapinan/wc_linenotify
+Plugin URI:  https://git.iotech.co.th/iamapinan/woocommerce-line-notify
 Description: Woocommerce new order notify to line chat.
 Version:     1.0.6
 Author:      Apinan Woratrakun
 Author URI:  https://iotech.co.th
 License:     GNU General Public License v3.0
-License URI: https://github.com/iamapinan/wc_linenotify/blob/master/LICENSE
+License URI: https://git.iotech.co.th/iamapinan/woocommerce-line-notify/blob/master/LICENSE
 Text Domain: wc_linenotify
 Domain Path: /languages
 */
