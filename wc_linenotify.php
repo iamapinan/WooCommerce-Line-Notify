@@ -26,7 +26,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
         // @return void
         public function __construct() {
             $this->id = 'wc-linenotify';
-            $this->version  = '1.0.5';
+            $this->version  = '1.0.6';
             $this->author = '<a href="https://facebook.com/9apinan" target="_blank">Apinan Woratrakun</a>';
             $this->title = 'Woocommerce Line Notify';
             $this->notify_api_endpoint = 'https://notify-api.line.me/api/notify';
