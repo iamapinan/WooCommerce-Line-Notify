@@ -1,0 +1,21 @@
+{
+    "name": "iamapinan/woocommerce_line_notify",
+    "description": "Woocommerce order notify to Line application.",
+    "keywords": ["wordpress", "plugin", "woocommerce", "line", "notification", "notify", "alert"],
+    "type": "wordpress-plugin",
+    "license": "GNU3.0",
+    "authors": [
+        {
+            "name": "Apinan Woratrakun",
+            "email": "iamapinan@gmail.com",
+            "homepage": "https://facebook.com/9apinan"
+        }
+    ],
+    "dist": {
+        "type": "zip",
+        "url": "https://github.com/iamapinan/wc_linenotify/archive/master.zip"
+      },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3"
+    }
+}
