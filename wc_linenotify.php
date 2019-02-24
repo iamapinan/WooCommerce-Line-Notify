@@ -266,7 +266,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
             <div class="wrap">
                 <h2>Woocommerce Line Notify</h2>
                 <p>Send order update to line notify.</p>
-                <img src="<?php echo WP_PLUGIN_URL . '/wc_linenotify/src/image/wc-line-notify-banner.png'; ?>">
+                <img src="<?php echo WP_PLUGIN_URL . '/wc_linenotify/src/image/banner-772x250.png'; ?>">
                 
                 <?php 
                     settings_errors();
