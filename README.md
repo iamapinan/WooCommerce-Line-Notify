@@ -51,7 +51,7 @@ To understand what we do with your data and compile with The EU General Data Pro
 `Order Id, Order customer name, Order Total, Order Product, Order timestamp, Order payment method`
 depend on your settings to your Line Messager account or Line group related with your Token ID.
 ### 3rd party service
-We send a transaction to this domain https://notify-bot.line.me
+We send a transaction to this domain https://notify-bot.line.me  
 Privacy Policy rules of Line Messaging https://terms.line.me/line_rules?lang=en
 
 
