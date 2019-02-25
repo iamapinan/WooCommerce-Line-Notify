@@ -46,7 +46,13 @@ Woocommerce order notification to Line notify API.
 
 
 ## Term of Privacy
-This plugin is call to external service [Line Messaging API](https://terms.line.me/line_rules/?lang=en) it use to be send an order data to your line messager account or line group depend on your token. 
+
+To understand what we do with your data and compile with The EU General Data Protection Regulation (GDPR)This plugin is call to external service Line Messaging API it use to be send an order data such as 
+`Order Id, Order customer name, Order Total, Order Product, Order timestamp, Order payment method`
+depend on your settings to your Line Messager account or Line group related with your Token ID.
+### 3rd party service
+We send a transaction to this domain https://notify-bot.line.me
+Privacy Policy rules of Line Messaging https://terms.line.me/line_rules?lang=en
 
 
 ## v1.0.6 Changes log
