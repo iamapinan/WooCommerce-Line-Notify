@@ -1,0 +1,115 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Line Notify\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 13:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.1"
+
+#: inc/Admin.php:84
+msgid " Quantity: "
+msgstr ""
+
+#: inc/Admin.php:84
+msgid " Total: "
+msgstr ""
+
+#: inc/Admin.php:84
+msgid "+ Product: "
+msgstr ""
+
+#. Author of the plugin
+msgid "Apinan Woratrakun"
+msgstr ""
+
+#: inc/Admin.php:297
+msgid "Change your setting"
+msgstr ""
+
+#: inc/Admin.php:239
+msgid "Click to enable debug option."
+msgstr ""
+
+#: inc/Admin.php:273
+msgid "Create Token"
+msgstr ""
+
+#. id
+#: inc/Admin.php:225
+msgid "Debug"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://facebook.com/9apinan"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://git.iotech.co.th/iamapinan/woocommerce-line-notify"
+msgstr ""
+
+#: inc/Admin.php:285
+msgid "Line API charactors limit"
+msgstr ""
+
+#. id
+#: inc/Admin.php:193
+msgid "Line Notify Token"
+msgstr ""
+
+#. id
+#: inc/Admin.php:201
+msgid "Message Pattern"
+msgstr ""
+
+#. id
+#: inc/Admin.php:209
+msgid "Order status to notify"
+msgstr ""
+
+#: inc/Admin.php:153
+msgid "Send order update to line notify."
+msgstr ""
+
+#. id
+#: inc/Admin.php:186
+msgid "Settings"
+msgstr ""
+
+#: inc/Admin.php:287
+msgid "Shortcode"
+msgstr ""
+
+#. id
+#: inc/Admin.php:217
+msgid "Time zone setting"
+msgstr ""
+
+#: inc/Admin.php:283
+msgid "Use default value"
+msgstr ""
+
+#: inc/Admin.php:239
+msgid "View debug log."
+msgstr ""
+
+#. Name of the plugin
+#: inc/Admin.php:148
+msgid "Woocommerce Line Notify"
+msgstr ""
+
+#. Description of the plugin
+msgid "Woocommerce new order notify to line chat."
+msgstr ""
+
+#: inc/Admin.php:281
+msgid "You have new order on"
+msgstr ""

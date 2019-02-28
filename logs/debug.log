@@ -1,0 +1,14 @@
+เมื่อเวลา 28/02/2019, 20:29คำสั่งซื้อหมายเลข 1199
+จาก Apinan Woratrakun
+มีสถานะ ส่งของแล้ว
+จำนวนเงิน:  135,050.00 ชำระโดย: Cash on delivery
+ที่อยู่จัดส่ง 98/43 แขวงพลับพลา  เขตวังทองหลาง กรุงเทพมหานคร
+===สินค้าดังนี้===
++ Product: Macbook Pro 2018 Quantity: 1 Total: 67,500.00
++ Product: Macbook Pro 2019 Quantity: 1 Total: 67,500.00
+
+-------------
+ ตรวจสอบ: http://localhost:8001/wp-admin/post.php?post=1199&action=edit
+===================================
+{"headers":{},"body":"{\"status\":200,\"message\":\"ok\"}","response":{"code":200,"message":"OK"},"cookies":[],"filename":null,"http_response":{"data":null,"headers":null,"status":null}}
+

@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woocommerce Line Notify\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 13:38+0000\n"
+"PO-Revision-Date: 2019-02-28 13:45+0000\n"
+"Last-Translator: iamapinan <iamapinan@gmail.com>\n"
+"Language-Team: ไทย\n"
+"Language: th\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.1"
+
+#: inc/Admin.php:84
+msgid " Quantity: "
+msgstr "จำนวน"
+
+#: inc/Admin.php:84
+msgid " Total: "
+msgstr "ยอดรวม"
+
+#: inc/Admin.php:84
+msgid "+ Product: "
+msgstr "+"
+
+#. Author of the plugin
+msgid "Apinan Woratrakun"
+msgstr "อภินันท์ วรตระกูล"
+
+#: inc/Admin.php:297
+msgid "Change your setting"
+msgstr "แก้ไขการตั้งค่า"
+
+#: inc/Admin.php:239
+msgid "Click to enable debug option."
+msgstr "คลิกเพื่อเปิดการดีบัก"
+
+#: inc/Admin.php:273
+msgid "Create Token"
+msgstr "สร้าง Token"
+
+#. id
+#: inc/Admin.php:225
+msgid "Debug"
+msgstr "ดีบัก"
+
+#. Author URI of the plugin
+msgid "https://facebook.com/9apinan"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://git.iotech.co.th/iamapinan/woocommerce-line-notify"
+msgstr ""
+
+#: inc/Admin.php:285
+msgid "Line API charactors limit"
+msgstr "Line API จำกัดจำนวนตัวอักษร"
+
+#. id
+#: inc/Admin.php:193
+msgid "Line Notify Token"
+msgstr "Token ของ Line Notify"
+
+#. id
+#: inc/Admin.php:201
+msgid "Message Pattern"
+msgstr "รูปแบบข้อความ"
+
+#. id
+#: inc/Admin.php:209
+msgid "Order status to notify"
+msgstr "สถานะคำสั่งซื้อที่แจ้งเตือน"
+
+#: inc/Admin.php:153
+msgid "Send order update to line notify."
+msgstr "ส่งข้อมูลคำสั่งซื้อไปยัง Line Notify เมื่อมีการเคลื่อนไหว"
+
+#. id
+#: inc/Admin.php:186
+msgid "Settings"
+msgstr "ตั้งค่า"
+
+#: inc/Admin.php:287
+msgid "Shortcode"
+msgstr "รหัสแทน"
+
+#. id
+#: inc/Admin.php:217
+msgid "Time zone setting"
+msgstr "ตั้งค่าเขตเวลา"
+
+#: inc/Admin.php:283
+msgid "Use default value"
+msgstr "ใช้ค่ามาตรฐาน"
+
+#: inc/Admin.php:239
+msgid "View debug log."
+msgstr "แสดง debug log"
+
+#. Name of the plugin
+#: inc/Admin.php:148
+msgid "Woocommerce Line Notify"
+msgstr "Woocommerce Line Notify"
+
+#. Description of the plugin
+msgid "Woocommerce new order notify to line chat."
+msgstr "Woocommerce new order notify to line chat."
+
+#: inc/Admin.php:281
+msgid "You have new order on"
+msgstr "คุณมีการแจ้งเตือนคำสั่งซื้อจาก"

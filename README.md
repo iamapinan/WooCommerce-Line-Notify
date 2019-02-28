@@ -1,17 +1,11 @@
-![Woocommerce Line Notify](src/image/wc-line-notify-banner.png)
 # Woocommerce Line Notify
-Woocommerce order notification to Line notify API.
+Send woocommerce order notification to Line notify API.  
+You can customize message pattern and notify to your chat room or your chat group in your pattern.
 
-## อธิบายเกี่ยวกับสิทธิในการใช้งานที่ทุกอย่างฟรีหมดโดยมีเงื่อนไขดังนี้
-* ไม่อนุญาตให้จำหน่ายซอฟต์แวร์ต้นฉบับโดยไม่มีการพัฒนาปรับปรุงซอฟต์แวร์เพิ่มเติมหรือขายต่อในลักษณะซอฟต์แวร์เดี่ยว เช่นการนำซอฟต์แวร์นี้ไปขายต่อให้ผู้อื่น  
-* ต้องแจ้งรายละเอียดการแก้ไขให้กับผู้พัฒนาทราบว่าได้แก้ไขอย่างไรบ้างในตัวซอฟต์แวร์
-* แต่อนุญาตใช้เพื่อการเป็นส่วนประกอบของทำโปรเจคใดๆ ทั้งฟรีและไม่ฟรี
-* ผู้พัฒนาไม่มีส่วนเกี่ยวข้องใดๆกับความเสียหายที่เกิดขึ้นจากการทำงานของซอฟต์แวร์ ผู้ใช้ยินดียอมรับความเสี่ยงนั้น
-
-[Download](https://git.iotech.co.th/iamapinan/woocommerce-line-notify/-/archive/master/woocommerce-line-notify-master.zip) zip file here.
+### [Download here](https://wordpress.org/plugins/woo-line-notify)
 
 ## Available short code for implement message pattern.
-```
+`
 [order_status]
 [order_id]
 [order_time]
@@ -25,7 +19,7 @@ Woocommerce order notification to Line notify API.
 [order_province]
 [order_url]
 [products] //List of product in order.
-```
+`
 
 ## Features
 - Add line token.
@@ -35,7 +29,7 @@ Woocommerce order notification to Line notify API.
 - Add logo or image banner to notification.
 - Only support Thai language for this version .
 
-## What's benefit of line notify can do.
+## Benefits. 
 1. Send a notification to your self.
 2. Send a notifycation to your group.
 3. Can send text, image and line sticker to the notification message.
@@ -51,47 +45,10 @@ To understand what we do with your data and compile with The EU General Data Pro
 `Order Id, Order customer name, Order Total, Order Product, Order timestamp, Order payment method`
 depend on your settings to your Line Messager account or Line group related with your Token ID.
 ### 3rd party service
-We send a transaction to this domain https://notify-bot.line.me  
-Privacy Policy rules of Line Messaging https://terms.line.me/line_rules?lang=en
+We send a transaction to this domain [https://notify-bot.line.me](https://notify-bot.line.me)
+Privacy Policy rules of Line Messaging [https://terms.line.me/line_rules?lang=en](https://terms.line.me/line_rules?lang=en)
 
-
-## v1.0.6 Changes log
-- [เพิ่ม Shortcode `[product]` เพื่อแสดงรายการสินค้าใน alert](https://github.com/iamapinan/Woocommerce-Line-Notify/issues/9)
-- ยกเลิกแนบรูป
-- กดที่ short code เพื่อเพิ่มลงใน textarea
-- แก้ไขการแสดงผล
-- ปรับปรุงความเสถียร
-
-## v1.0.5 Changes log
-- Remove image require for image field.
-- Fixed order status display from status code to status label.
-- Add [order_province] to display provice name in Thai only.
-- Add [order_phone] to display billing phone number.
-- Add [order_company] to display billing company.
-- Add [order_note] to display customer notes.
-- Add [order_url] to display order details for authorized user.
-
-## v1.0.4 Changes log
-- Add image to notification.
-- Choose order status to send notification.
-- Show timezone setting in your system.
-- Fixed timezone [issue](https://github.com/iamapinan/wc_linenotify/issues/1).
-- Improved performance by query database when need only.
-- Smooth design settings ui.
-- Support scss style editing.
-
-## v1.0.3 Changes log
-- Fixed time display in alert message.
-- Fixed order total in alert message.
-- Remove state name.
-- Add [order_customer] short code.
-
-## Screenshot
-![Setting](assets/setting-screen.png)  
-Setting page
-
-![Alert message](assets/noti-demo.png)  
-Notification page
+### [Change log](CHANGELOG)
 
 ## Roadmap
 - Message pattern for selected status.
@@ -111,11 +68,7 @@ Thank you for your suggestion and support to the project. I very happy to help a
 
 ### Welcome to the opensource world.
 
-## Wiki
-[WIKI](https://github.com/iamapinan/wc_linenotify/wiki)
-
-## Issue
-[Issue](https://github.com/iamapinan/wc_linenotify/issues)
+### [Wiki](https://git.iotech.co.th/iamapinan/woocommerce-line-notify/wikis), [Issue](https://git.iotech.co.th/iamapinan/woocommerce-line-notify/issues)
 
 ## Any support I can do.
 * Email: [apinan@iotech.co.th](mailto:apinan@iotech.co.th)

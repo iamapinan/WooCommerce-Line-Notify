@@ -1,3 +1,25 @@
+v1.0.8
+- Fixed metadata
+- Change token field type to password.
+
+v1.0.7
+- Change setting design.
+- Add debug function.
+- Update code and folder structure.
+- Change plugin slug to match with Plugin directory.
+- Fixed many warning.
+- Remove banner from setting page.
+- Add icon to setting page.
+- Make all text translatable.
+- Full support Thai and English language.
+
+v1.0.6
+- Add Shortcode `[product]` to have product list in message pattern.
+- Remove require to attacth image.
+- Click on short code to automatic add short code in message pattern.
+- Fixed style.
+- Increase stable and more.
+
 v1.0.5
 - Remove image require for image field.
 - Fixed order status display from status code to status label.

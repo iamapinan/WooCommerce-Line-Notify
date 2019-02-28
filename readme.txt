@@ -4,7 +4,7 @@ Donate link: https://paypal.me/apinu
 Tags: woocommerce, notify, messager, alert, order, line
 Requires at least: 4.8
 Tested up to: 5.1
-Stable tag: 5.1
+Stable tag: 1.0.8
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -37,13 +37,9 @@ Can send text, image and line sticker to the notification message.
 [products] //List of product in order.
 `
 
-= 3rd service =
-https://notify-bot.line.me
-https://terms.line.me/line_rules?lang=en
-
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/woocommerce-line-notify` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/woo-line-notify` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Use the Settings->Line Notify screen to configure the plugin
 
@@ -57,10 +53,24 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 
 == Screenshots ==
 
-1. Settings screen `assets/setting-screen.png`
-2. Notify screen `assets/noti-demo.png`
+1. Settings screen section.
+2. Notify screen demo.
 
 == Changelog ==
+= 1.0.8 =
+- Fixed metadata for svn.
+- Change token field type to password.
+
+= 1.0.7 =
+- Change setting design.
+- Add debug function.
+- Update code and folder structure.
+- Change plugin slug to match with Plugin directory.
+- Fixed many warning.
+- Remove banner from setting page.
+- Add icon to setting page.
+- Make all text translatable.
+- Full support Thai and English language.
 
 = 1.0.6 =
 - Add Shortcode `[product]` to have product list in message pattern.
@@ -70,7 +80,10 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 - Increase stable and more.
 
 == Upgrade Notice ==
-
+= 1.0.8 =
+Fixed metatag
+= 1.0.7 =
+Update design and fixed many error make it can update from store and make it translatable.
 = 1.0.6 =
 Improved performance and add more features.
 
@@ -87,6 +100,6 @@ Improved performance and add more features.
 To understand what we do with your data and compile with The EU General Data Protection Regulation (GDPR)This plugin is call to external service Line Messaging API it use to be send an order data such as 
 Order Id, Order customer name, Order Total, Order Product, Order timestamp, Order payment method 
 depend on your settings to your Line Messager account or Line group related with your Token ID.
-= 3rd party service =
-We send a transaction to this domain https://notify-bot.line.me
-Privacy Policy rules of Line Messaging https://terms.line.me/line_rules?lang=en
+
+= Line Notify Term =
+Privacy policy rules of Line Messaging please read [Term of privacy](https://terms.line.me/line_rules?lang=en)
