@@ -144,7 +144,7 @@ class Admin {
         
         <div class="wlnWrap"> 
             <h2>
-                <span class="wln-logo"><img src="<?php echo plugins_url( 'assets/image/line-notify-logo.png', __DIR__ ); ?>"></span>
+                <span class="wln-logo"><img src="<?php echo plugins_url( 'src/image/line-notify-logo.png', __DIR__ ); ?>"></span>
                 <?php _e( 'Woocommerce Line Notify', 'woo-line-notify' );?>
             </h2>
             <?php 
@@ -170,8 +170,8 @@ class Admin {
         // Get plugin options
         $this->options = get_option( '_option_name' );
     
-        wp_register_style( 'wln_style', plugins_url( 'assets/wc_linenotify_style.css', __DIR__ ) );
-        wp_register_script( 'wln_src', plugins_url( 'assets/src.js', __DIR__ ) );
+        wp_register_style( 'wln_style', plugins_url( 'src/wc_linenotify_style.css', __DIR__ ) );
+        wp_register_script( 'wln_src', plugins_url( 'src/src.js', __DIR__ ) );
         wp_enqueue_style('wln_style');
         wp_enqueue_script('wln_src');
     
