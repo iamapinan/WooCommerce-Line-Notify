@@ -4,7 +4,7 @@ Donate link: https://paypal.me/apinu
 Tags: woocommerce, notify, messager, alert, order, line
 Requires at least: 4.8
 Tested up to: 5.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -57,6 +57,9 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 2. Notify screen demo.
 
 == Changelog ==
+= 1.0.9 =
+- Update meta
+
 = 1.0.8 =
 - Fixed metadata for svn.
 - Change token field type to password.
@@ -80,6 +83,8 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 - Increase stable and more.
 
 == Upgrade Notice ==
+= 1.0.9 =
+- Update meta
 = 1.0.8 =
 Fixed metatag
 = 1.0.7 =
