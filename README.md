@@ -5,7 +5,7 @@ You can customize message pattern and notify to your chat room or your chat grou
 ### [Download here](https://wordpress.org/plugins/woo-line-notify)
 
 ## Available short code for implement message pattern.
-`
+```
 [order_status]
 [order_id]
 [order_time]
@@ -19,7 +19,7 @@ You can customize message pattern and notify to your chat room or your chat grou
 [order_province]
 [order_url]
 [products] //List of product in order.
-`
+```
 
 ## Features
 - Add line token.
