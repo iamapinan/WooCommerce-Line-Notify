@@ -3,12 +3,13 @@
  * Package: woo-line-notify
  * (c) Apinan Woratrakun (iOTech Enterprise Co.,Ltd.) <apinan@iotech.co.th>
  */
+// namespace WooLineNotify\Extras;
 if ( ! defined( 'ABSPATH' ) ) exit;
-class Extras {
+class Actions {
     /**
      * Change woocommerce state name to Thailand state.
      */
-    public static function thai_states( $states ) {
+    public function thai_states( $states ) {
         $states_set = array(
             'TH-81' => 'กระบี่',
             'TH-10' => 'กรุงเทพมหานคร',
@@ -90,4 +91,50 @@ class Extras {
         );
         return $states_set[$states];
     }
+
+    /**
+     * Send notify action.
+     */
+    public function send_notify($msg, $source = 'local') {
+        // Get plugin options
+        $get_option = get_option( '_option_notify' );
+        $get_debug = get_option( '_option_debug' );
+        $counter = get_option('wln_source_' . $source);
+        $endpoint = get_option('wln-api-endpoint');
+        // Header setup
+        $headers = array( 
+                'Authorization' => 'Bearer '. $get_option['token'],
+            );
+        // Request prepare
+        $args = array(
+            'method' => 'POST',
+            'timeout' => 45,
+            'httpversion' => '1.0',
+            'headers' => $headers,
+            'body' => array( 
+                'message' => $msg
+            ),
+        );
+        
+        // Post to line notify server.
+        $response = wp_remote_post( $endpoint, $args );
+        $status = wp_remote_retrieve_response_code($response);
+
+        update_option('wln_source_' . $source, $counter+1);
+        
+        if( isset( $get_debug['debug'] ) ) {
+            // Loging output
+            $log = "Status: ". wp_remote_retrieve_response_code($response) ."\nMessage: " . $msg . "\n" . "Response: " . str_replace('\\', '', json_encode($response));
+            $this->wln_debug_log( $log );
+        }
+
+        return $response;
+    }
+
+    public function wln_debug_log( $logs ) {
+        if( is_writable( WOO_LINE_NOTIFY_PATH .'logs/debug.log' ) ) {
+            file_put_contents( WOO_LINE_NOTIFY_PATH .'logs/debug.log', $logs . "\n\nDatetime: " . date('d/m/Y H:i') );
+        }
+    } 
+    
 }
