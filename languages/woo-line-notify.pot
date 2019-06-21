@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Woocommerce Line Notify\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-28 13:38+0000\n"
+"POT-Creation-Date: 2019-06-21 20:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,39 +13,89 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-5.1"
+"X-Loco-Version: 2.3.0; wp-5.2.2"
 
-#: inc/Admin.php:84
+#: inc/LineNotifyAdmin.php:383
+msgid ""
+"\n"
+"                    <p><strong>Features</strong></p>\n"
+"                    <p>\n"
+"                    1. Add line token.<br>\n"
+"                    2. Message pattern with order short code supported.<br>\n"
+"                    3. Send notify to line group or user.<br>\n"
+"                    4. Send notify when have order activity.<br>\n"
+"                    5. Multi language support.<br>\n"
+"                    6. API to send message with basic authen security for "
+"developer.<br>\n"
+"                    7. Static method to send message for developer.<br>\n"
+"                    8. Debug mode option.<br>\n"
+"                    9. Dynamic fields to unlock your need.<br>\n"
+"                    10. Dashboard widget.<br>\n"
+"                    11. Can use without Woocommerce.\n"
+"                    </p>"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:129
 msgid " Quantity: "
 msgstr ""
 
-#: inc/Admin.php:84
+#: inc/LineNotifyAdmin.php:129
 msgid " Total: "
 msgstr ""
 
-#: inc/Admin.php:84
-msgid "+ Product: "
+#: inc/LineNotifyAdmin.php:129
+msgid "- Product: "
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:533
+msgid ""
+"<p>Please install and activate <a href='https://th.wordpress."
+"org/plugins/woocommerce/'>Woocommerce</a> to use this feature.</p>"
+msgstr ""
+
+#. id
+#: inc/LineNotifyAdmin.php:209 inc/LineNotifyAdmin.php:302
+msgid "About"
+msgstr ""
+
+#. id
+#: inc/LineNotifyAdmin.php:207 inc/LineNotifyAdmin.php:289
+msgid "API"
+msgstr ""
+
+#. id
+#: inc/LineNotifyAdmin.php:369
+msgid "API Key"
 msgstr ""
 
 #. Author of the plugin
 msgid "Apinan Woratrakun"
 msgstr ""
 
-#: inc/Admin.php:297
+#: inc/LineNotifyAdmin.php:518
 msgid "Change your setting"
 msgstr ""
 
-#: inc/Admin.php:239
+#: inc/LineNotifyAdmin.php:431
 msgid "Click to enable debug option."
 msgstr ""
 
-#: inc/Admin.php:273
+#: inc/LineNotifyAdmin.php:483
 msgid "Create Token"
 msgstr ""
 
 #. id
-#: inc/Admin.php:225
+#: inc/LineNotifyAdmin.php:205 inc/LineNotifyAdmin.php:277
+#: inc/LineNotifyAdmin.php:359
 msgid "Debug"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:431
+msgid "Debug option is working."
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:508
+msgid "Dynamic fields"
 msgstr ""
 
 #. Author URI of the plugin
@@ -56,53 +106,84 @@ msgstr ""
 msgid "https://git.iotech.co.th/iamapinan/woocommerce-line-notify"
 msgstr ""
 
-#: inc/Admin.php:285
-msgid "Line API charactors limit"
+#: inc/LineNotifyAdmin.php:381
+msgid "I removed the design and keep focus on features development."
 msgstr ""
 
 #. id
-#: inc/Admin.php:193
+#: inc/LineNotifyAdmin.php:317
+msgid "Line Notify API"
+msgstr ""
+
+#. id
+#: inc/LineNotifyAdmin.php:325
 msgid "Line Notify Token"
 msgstr ""
 
 #. id
-#: inc/Admin.php:201
+#: inc/LineNotifyAdmin.php:333
 msgid "Message Pattern"
 msgstr ""
 
+#: inc/LineNotifyAdmin.php:203
+msgid "Notification"
+msgstr ""
+
 #. id
-#: inc/Admin.php:209
+#: inc/LineNotifyAdmin.php:265
+msgid "Notification settings"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:314
+msgid "Order notification setting"
+msgstr ""
+
+#. id
+#: inc/LineNotifyAdmin.php:341
 msgid "Order status to notify"
 msgstr ""
 
-#: inc/Admin.php:153
-msgid "Send order update to line notify."
+#: inc/LineNotifyAdmin.php:201
+msgid "Send order update to Line."
 msgstr ""
 
-#. id
-#: inc/Admin.php:186
-msgid "Settings"
+#: inc/LineNotifyAdmin.php:379
+msgid ""
+"Send woocommerce order notification to Line notify API.<br>You can customize "
+"message pattern and notify to your chat room or your chat group in your "
+"pattern."
 msgstr ""
 
-#: inc/Admin.php:287
+#: inc/LineNotifyAdmin.php:503
 msgid "Shortcode"
 msgstr ""
 
+#: inc/LineNotifyAdmin.php:399
+msgid "Term and privacy"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:380
+msgid "The new concept is not colorful but powerful and also free forever."
+msgstr ""
+
 #. id
-#: inc/Admin.php:217
+#: inc/LineNotifyAdmin.php:349
 msgid "Time zone setting"
 msgstr ""
 
-#: inc/Admin.php:283
+#: inc/LineNotifyAdmin.php:409
+msgid ""
+"To contribute this plugin please follow the <a href=\"https://git.iotech.co."
+"th/iamapinan/woocommerce-line-notify#contibute-guidelines\" "
+"target=\"_blank\">contributing guide.</a>"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:500
 msgid "Use default value"
 msgstr ""
 
-#: inc/Admin.php:239
-msgid "View debug log."
-msgstr ""
-
 #. Name of the plugin
-#: inc/Admin.php:148
+#: inc/LineNotifyAdmin.php:198
 msgid "Woocommerce Line Notify"
 msgstr ""
 
@@ -110,6 +191,21 @@ msgstr ""
 msgid "Woocommerce new order notify to line chat."
 msgstr ""
 
-#: inc/Admin.php:281
+#: inc/LineNotifyAdmin.php:49
+msgid ""
+"You got new order at [order_time] order number [order_id]\n"
+"From: [order_customer]\n"
+"Status: [order_status]\n"
+"Total:  [order_total] Payment method: [order_payment]\n"
+"Address: [order_address]\n"
+"=== Products ===\n"
+"[products]\n"
+"\n"
+"Check it now [order_url]\n"
+"-------------\n"
+"[order_note]"
+msgstr ""
+
+#: inc/LineNotifyAdmin.php:498
 msgid "You have new order on"
 msgstr ""
