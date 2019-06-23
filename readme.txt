@@ -4,7 +4,7 @@ Donate link: https://paypal.me/apinu
 Tags: woocommerce line notify, woo line notify, woo-line-notify, notification, line notification, line notify, woocommerce, notify, messager, alert, order, line, line bot
 Requires at least: 4.8
 Tested up to: 5.2.2
-Stable tag: 1.1.1
+Stable tag: 1.1.4
 Requires PHP: 7.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -124,9 +124,9 @@ To send message via static method just put your message to the method like below
 == REST API ==
 URL: domain/wp-json/woo-line-notify/v1/notify
 METHOD: POST
-PARAMETERS: `message` <Your message to send>
+PARAMETERS: `message` Your message to send
 Authentication: Basic Authen
-USERNAME/PASSWORD: <API Key>:<API_Key>
+USERNAME/PASSWORD: API Key:API_Key
 
 = For example. =
 Send post request to `http://localhost/wp-json/woo-line-notify/v1/notify` you must be send parameter `message` by form/data and add Authenticate to header with value `Basic base64_encode( some_api_key_from_api_option:some_api_key_from_api_option )`
@@ -153,6 +153,12 @@ Yes you can do it by adding shortcode [product] to your message pattern.
 5. Dashboard widget.
 
 == Changelog ==
+= 1.1.4 =
+- fixed action
+= 1.1.3 =
+- update version
+= 1.1.2 =
+- fixed old value missing.
 = 1.1.1 =
 - add code
 
