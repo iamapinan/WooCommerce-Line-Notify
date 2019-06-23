@@ -155,7 +155,7 @@ class LineNotifyAdmin {
         $order_data = $order->get_data(); // The Order data
         
         // Get plugin options
-        $get_option = get_option( '_option_notify' );
+        $get_option = get_option( '_option_name' );
       
         // Check notify rule
         $availableStatus = json_decode( $get_option['status'] );
@@ -257,7 +257,7 @@ class LineNotifyAdmin {
         // Notification setting
         register_setting(
             '_notification_group', // option_group
-            '_option_notify', // option_name
+            '_option_name', // option_name
             array( $this, 'noti_sanitize' ) // sanitize_callback
         );
         add_settings_section(
@@ -294,7 +294,7 @@ class LineNotifyAdmin {
         // About
         register_setting(
             '_about_group', // option_group
-            '_option_notify' // option_name
+            '_option_name' // option_name
             // array( $this, '_sanitize' ) // sanitize_callback
         );
         add_settings_section(
@@ -310,7 +310,7 @@ class LineNotifyAdmin {
 
         switch ( $active_tab ) {
             case 'notification_setting':
-                $this->options = get_option( '_option_notify' );
+                $this->options = get_option( '_option_name' );
                 echo __('Order notification setting','woo-line-notify');
                 add_settings_field(
                     'endpoint', // id
@@ -480,7 +480,7 @@ class LineNotifyAdmin {
     }
     public function token_callback() {
         printf(
-            '<input class="regular-text" type="password" name="_option_notify[token]" id="token" value="%s" required> <a href="https://notify-bot.line.me/my/" target="_blank" class="button button-secondary">' . __('Create Token', 'woo-line-notify') . '</a>',
+            '<input class="regular-text" type="password" name="_option_name[token]" id="token" value="%s" required> <a href="https://notify-bot.line.me/my/" target="_blank" class="button button-secondary">' . __('Create Token', 'woo-line-notify') . '</a>',
             isset( $this->options['token'] ) ? esc_attr( $this->options['token']) : ''
         );
     }
@@ -495,7 +495,7 @@ class LineNotifyAdmin {
     
     public function pattern_callback() {
         printf(
-            '<textarea class="large-text" maxlength="500" placeholder="' . __('You have new order on', 'woo-line-notify') . ' [order_status]" rows="5" name="_option_notify[pattern]" id="pattern" style="max-width: 580px;height: 200px;">%s</textarea>
+            '<textarea class="large-text" maxlength="500" placeholder="' . __('You have new order on', 'woo-line-notify') . ' [order_status]" rows="5" name="_option_name[pattern]" id="pattern" style="max-width: 580px;height: 200px;">%s</textarea>
             <p>
                 <a href="" class="button button-secondary" id="add_default_pattern">' . __('Use default value', 'woo-line-notify') . '</a>
             </p>
@@ -527,7 +527,7 @@ class LineNotifyAdmin {
             $orderStatus = wc_get_order_statuses();
             foreach($orderStatus as $sid => $sv) {
                 $check = @(in_array($sid, $statusSelected)) ? 'checked' : '';
-                echo "<p><span class='order_status_check'><input type='checkbox' name='_option_notify[status][]' $check value='$sid' id='status_$sid'> <label for='status_$sid'>$sv</label></span>&nbsp;&nbsp;</p>";
+                echo "<p><span class='order_status_check'><input type='checkbox' name='_option_name[status][]' $check value='$sid' id='status_$sid'> <label for='status_$sid'>$sv</label></span>&nbsp;&nbsp;</p>";
             }
         } else {
             echo __("<p>Please install and activate <a href='https://th.wordpress.org/plugins/woocommerce/'>Woocommerce</a> to use this feature.</p>", 'woo-line-notify');

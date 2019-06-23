@@ -97,7 +97,7 @@ class Actions {
      */
     public function send_notify($msg, $source = 'local') {
         // Get plugin options
-        $get_option = get_option( '_option_notify' );
+        $get_option = get_option( '_option_name' );
         $get_debug = get_option( '_option_debug' );
         $counter = get_option('wln_source_' . $source);
         $endpoint = get_option('wln-api-endpoint');

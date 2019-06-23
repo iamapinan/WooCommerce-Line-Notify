@@ -3,7 +3,7 @@
 Plugin Name: Woocommerce Line Notify
 Plugin URI: https://git.iotech.co.th/iamapinan/woocommerce-line-notify
 Description: Woocommerce new order notify to line chat.
-Version: 1.1.1
+Version: 1.1.4
 Author: Apinan Woratrakun
 Author URI: https://facebook.com/9apinan
 License: GNU General Public License v3.0
