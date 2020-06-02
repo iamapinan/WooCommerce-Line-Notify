@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/iamapinan/woocommerce-line-notify/badge)](https://www.codefactor.io/repository/github/iamapinan/woocommerce-line-notify)
+
 # Woocommerce Line Notify
 Send woocommerce order notification to Line notify API.  
 You can customize message pattern and notify to your chat room or your chat group in your pattern.
